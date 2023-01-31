@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Popups</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/popups.css">
+	<script src="js/static/frontend-works.js"></script>
+</head>
+<style>
+	h1 {
+		margin: 0 0 30px;
+	}
+
+	.btns {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px 60px;
+	}
+
+	.btn {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		cursor: pointer;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		color: #fff;
+		font-weight: 500;
+		padding: 14px 30px;
+		margin: 10px;
+		border-radius: 100px;
+		background: #ff8a00;
+	}
+
+	.btn:focus {
+		outline: none;
+	}
+</style>
+
+<body>
+	<div class="wrapper">
+		<main class="middle">
+			<div class="container">
+				<h1>Демо попапов</h1>
+				<div class="btns">
+					<button class="btn" data-ajax data-url="ajax/popup/callback/callback.html">Заказать звонок</button>
+					<button class="btn" data-ajax data-url="ajax/popup/success-callback/success.html">Успешная отправка попапа "Заказать звонок"</button>
+					<button class="btn" data-ajax data-url="ajax/popup/application/application.html">Оставить заявку</button>
+					<button class="btn" data-ajax data-url="ajax/popup/success-application/success.html">Успешная отправка попапа "Оставить заявку"</button>
+				</div>
+			</div>
+		</main>
+		<!-- /.middle -->
+	</div>
+	<!-- /.wrapper -->
+	<script src="js/popups.bundle.js"></script>
+</body>
+
+</html>
