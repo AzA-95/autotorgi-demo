@@ -208,11 +208,11 @@
 							<div class="filter__title">Фильтр</div>
 							<div class="filter__close-btn js-filter__close-btn"></div>
 						</div>
-						<div class="filter__content">
+						<div class="filter__content js-filter__content">
 							<div class="filter__top-fields">
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="brand" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Марка" data-show-search="true" data-allow-deselect="true">
+										<select name="brand" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Марка" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Audi</option>
 											<option value="2">Bmw</option>
@@ -224,7 +224,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="model" multiple="true" disabled="true" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Модель" data-show-search="true" data-allow-deselect="true">
+										<select name="model" multiple="true" disabled="true" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Модель" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">x5</option>
 											<option value="2">x6</option>
@@ -235,7 +235,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="transmission" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="КПП" data-show-search="true" data-allow-deselect="true">
+										<select name="transmission" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="КПП" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">АКПП</option>
 											<option value="2">Механика</option>
@@ -247,7 +247,7 @@
 								<div class="filter__fields">
 									<div class="filter__small-field">
 										<div class="select-box">
-											<select name="year-from" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Год от" data-show-search="true" data-allow-deselect="true">
+											<select name="year-from" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Год от" data-show-search="true" data-allow-deselect="true">
 												<option data-placeholder="true"></option>
 												<option value="1">1992</option>
 												<option value="2">1993</option>
@@ -261,7 +261,7 @@
 									</div>
 									<div class="filter__small-field">
 										<div class="select-box">
-											<select name="year-to" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="до" data-show-search="true" data-allow-deselect="true">
+											<select name="year-to" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="до" data-show-search="true" data-allow-deselect="true">
 												<option data-placeholder="true"></option>
 												<option value="1">2000</option>
 												<option value="2">2001</option>
@@ -277,7 +277,7 @@
 								<div class="filter__fields">
 									<div class="filter__small-field">
 										<div class="select-box">
-											<select name="mileage-from" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Пробег от" data-show-search="true" data-allow-deselect="true">
+											<select name="mileage-from" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Пробег от" data-show-search="true" data-allow-deselect="true">
 												<option data-placeholder="true"></option>
 												<option value="1">11.000</option>
 												<option value="2">28.000</option>
@@ -287,7 +287,7 @@
 									</div>
 									<div class="filter__small-field">
 										<div class="select-box">
-											<select name="mileage-to" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="до" data-show-search="true" data-allow-deselect="true">
+											<select name="mileage-to" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="до" data-show-search="true" data-allow-deselect="true">
 												<option data-placeholder="true"></option>
 												<option value="1">30.000</option>
 												<option value="2">60.000</option>
@@ -298,7 +298,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="salesman" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Продавец" data-show-search="true" data-allow-deselect="true">
+										<select name="salesman" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Продавец" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Empty</option>
 										</select>
@@ -306,7 +306,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="city" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Город" data-show-search="true" data-allow-deselect="true">
+										<select name="city" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Город" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Москва</option>
 											<option value="2">Санкт-Петербург</option>
@@ -315,7 +315,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="trade-type" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Тип торгов" data-show-search="true" data-allow-deselect="true">
+										<select name="trade-type" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Тип торгов" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Купить сейчас</option>
 											<option value="2">Открытые торги</option>
@@ -324,7 +324,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="category" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Категория" data-show-search="true" data-allow-deselect="true">
+										<select name="category" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Категория" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Корпоративные парки</option>
 											<option value="2">Лизинг и банки</option>
@@ -337,7 +337,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="state" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Состояние" data-show-search="true" data-allow-deselect="true">
+										<select name="state" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Состояние" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Кроме аварийных</option>
 											<option value="2">Аварийные</option>
@@ -349,7 +349,7 @@
 								<div class="filter__fields">
 									<div class="filter__small-field">
 										<div class="select-box">
-											<select name="volume-from" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Объём от" data-show-search="true" data-allow-deselect="true">
+											<select name="volume-from" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Объём от" data-show-search="true" data-allow-deselect="true">
 												<option data-placeholder="true"></option>
 												<option value="1">1600</option>
 												<option value="2">1800</option>
@@ -360,7 +360,7 @@
 									</div>
 									<div class="filter__small-field">
 										<div class="select-box">
-											<select name="volume-to" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="до" data-show-search="true" data-allow-deselect="true">
+											<select name="volume-to" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="до" data-show-search="true" data-allow-deselect="true">
 												<option data-placeholder="true"></option>
 												<option value="1">1600</option>
 												<option value="2">1800</option>
@@ -374,7 +374,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="engine" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Двигатель" data-show-search="true" data-allow-deselect="true">
+										<select name="engine" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Двигатель" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Бензин</option>
 											<option value="2">Дизель</option>
@@ -384,7 +384,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="color" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Цвет" data-show-search="true" data-allow-deselect="true">
+										<select name="color" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Цвет" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Белый</option>
 											<option value="2">Черный</option>
@@ -393,7 +393,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="climate-control" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Климат-контроль" data-show-search="true" data-allow-deselect="true">
+										<select name="climate-control" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Климат-контроль" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Климат-контроль</option>
 											<option value="2">Климат-контроль 2-зонный</option>
@@ -404,7 +404,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="upholstery" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Обивка салона" data-show-search="true" data-allow-deselect="true">
+										<select name="upholstery" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Обивка салона" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Кожа</option>
 											<option value="2">Ткань</option>
@@ -413,7 +413,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="VAT" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="НДС" data-show-search="true" data-allow-deselect="true">
+										<select name="VAT" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="НДС" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">НДС не облагается</option>
 											<option value="2">НДС включен</option>
@@ -422,7 +422,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="body-type" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Тип кузова" data-show-search="true" data-allow-deselect="true">
+										<select name="body-type" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Тип кузова" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">Седан</option>
 											<option value="2">Универсал</option>
@@ -432,7 +432,7 @@
 								</div>
 								<div class="filter__field">
 									<div class="select-box">
-										<select name="drive-unit" class="select-box__select js-select-box__select allow-deselect" data-placeholder-text="Привод" data-show-search="true" data-allow-deselect="true">
+										<select name="drive-unit" class="select-box__select js-select-box__select js-select-box-filter allow-deselect" data-placeholder-text="Привод" data-show-search="true" data-allow-deselect="true">
 											<option data-placeholder="true"></option>
 											<option value="1">4х2</option>
 											<option value="2">4х4</option>
@@ -467,7 +467,7 @@
 					</div>
 					<div class="sort-line__sort">
 						<div class="select-box">
-							<select name="sort" class="select-box__select js-select-box__select " data-placeholder-text="Сортировать">
+							<select name="sort" class="select-box__select js-select-box__select  " data-placeholder-text="Сортировать">
 								<option data-placeholder="true"></option>
 								<option value="1">По умолчанию</option>
 								<option value="2">Название</option>
@@ -485,7 +485,7 @@
 						<div class="sort-line__sort-count-title">Кол-во на странице:</div>
 						<div class="sort-line__sort-count-box">
 							<div class="select-box">
-								<select name="show-count" class="select-box__select js-select-box__select ">
+								<select name="show-count" class="select-box__select js-select-box__select  ">
 									<option value="1">10</option>
 									<option value="2">25</option>
 									<option value="3">50</option>
@@ -1695,7 +1695,7 @@
 						<div class="pagination__show-count-title">Кол-во на странице:</div>
 						<div class="pagination__show-count-box">
 							<div class="select-box">
-								<select name="show-count" class="select-box__select js-select-box__select ">
+								<select name="show-count" class="select-box__select js-select-box__select  ">
 									<option value="1">10</option>
 									<option value="2">25</option>
 									<option value="3">50</option>

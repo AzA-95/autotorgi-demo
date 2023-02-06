@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					globalPopup
 						.options({
 							addClassNamePopup: modiferClass ? modiferClass : null,
+							closeButtons: '.js-popup-close-btn'
 						})
 						.html(html)
 						.show();
